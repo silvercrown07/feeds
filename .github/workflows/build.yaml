@@ -1,0 +1,33 @@
+name: Build
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    name: ${{ matrix.arch }} build
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        arch:
+          - ramips-mt7621-openwrt-23.05
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build
+        uses: openwrt/gh-action-sdk@main
+        env:
+          ARCH: ${{ matrix.arch }}
+          PACKAGES: detour smartdns
+          V: sc
+
+      - name: Store packages
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.arch }}-packages
+          path: bin/packages/**/*.ipk
