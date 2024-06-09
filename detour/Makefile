@@ -1,12 +1,12 @@
 include $(TOPDIR)/rules.mk
 
 PKG_NAME:=detour
-PKG_VERSION:=1.2024.04
+PKG_VERSION:=1.2024.06
 PKG_RELEASE:=1
 
-PKG_SOURCE:=exmcUbTW.tar.gz
-PKG_SOURCE_URL:=https://a.uguu.se
-PKG_HASH:=8613599f24c9bd3e3d405cb401ad56898b053c9b11599b76cc8b24d18a3f6a51
+PKG_SOURCE:=ZomgQght.tar.gz
+PKG_SOURCE_URL:=https://f.uguu.se
+PKG_HASH:=9963b3e1a78cdee931dba0277a08e56231118e2cecd4f46b5b852b2cdddcd52e
 
 PKG_MAINTAINER:=silvercrown07 <44765224+silvercrown07@users.noreply.github.com>
 PKG_LICENSE:=MIT

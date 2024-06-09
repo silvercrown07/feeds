@@ -23,7 +23,7 @@ jobs:
         uses: openwrt/gh-action-sdk@main
         env:
           ARCH: ${{ matrix.arch }}
-          PACKAGES: detour smartdns
+          PACKAGES: detour
           V: sc
 
       - name: Store packages
