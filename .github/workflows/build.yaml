@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         arch:
-          - ramips-mt7621-openwrt-23.05
+          - mediatek-filogic-24.10.2
 
     steps:
       - uses: actions/checkout@v4
@@ -23,7 +23,7 @@ jobs:
         uses: openwrt/gh-action-sdk@main
         env:
           ARCH: ${{ matrix.arch }}
-          PACKAGES: detour
+          PACKAGES: smartdns
           V: sc
 
       - name: Store packages
