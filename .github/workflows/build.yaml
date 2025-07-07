@@ -23,7 +23,7 @@ jobs:
         uses: openwrt/gh-action-sdk@main
         env:
           ARCH: ${{ matrix.arch }}
-          PACKAGES: vlmcsd
+          PACKAGES: smartdns
           V: sc
 
       - name: Store packages
