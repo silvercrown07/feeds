@@ -12,7 +12,7 @@ jobs:
     strategy:
       matrix:
         arch:
-          - ramips-mt7621-24.10.5
+          - ramips-mt7621-openwrt-24.10
 
     steps:
       - uses: actions/checkout@v4
